@@ -23,7 +23,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 include(../../library.pri)
 CONFIG	-= warn_on thread
 include(license-lib.pri)
-#include(rapidxml-1.13/rapidxml.pri)
 
 unix {
     target.path = /usr/lib

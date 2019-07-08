@@ -7,7 +7,10 @@ SUBDIRS =   \
     license \
     qexts \
     qribbon \
-    qlite
+    qlite \
+    aggregation \
+    extensionsystem \
+    utils
 
 for(l, SUBDIRS) {
     QTC_LIB_DEPENDS =
