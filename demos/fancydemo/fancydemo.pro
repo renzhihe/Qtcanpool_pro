@@ -27,10 +27,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 include($$QTCANPOOL_ROOT/src/rpath.pri)
 
 # lib
-LIBS *= -l$$qtLibraryName(qcanpool) \
-        -l$$qtLibraryName(license)
+LIBS *= -l$$qtLibraryName(qcanpool)
 
-INCLUDEPATH += .. $$TOPDIR/src/libs
+INCLUDEPATH += ..
 
 include(fancydemo-src.pri)
 include($$QTCANPOOL_ROOT/src/modules/modules.pri)

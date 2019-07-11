@@ -36,9 +36,6 @@
 #include "skindialog.h"
 #include "theme.h"
 
-#include "licensedialog.h"
-#include "license/nrlicense.h"
-
 #define COMPANY_NAME    QString::fromUtf8("科技有限公司")
 
 MainWindow *MainWindow::m_instance = nullptr;
@@ -79,24 +76,6 @@ MainWindow *MainWindow::instance()
 {
     return m_instance;
 }
-
-void MainWindow::checkLicense()
-{
-    int nret = CheckLicense("fancydemo");
-    if(nret > 0)
-        return;
-
-    LicenseDialog dlg(this);
-    if(dlg.exec() == QDialog::Accepted)
-    {
-        ;
-    }
-    else
-    {
-        exit(1);
-    }
-}
-
 
 void MainWindow::createWindow()
 {
